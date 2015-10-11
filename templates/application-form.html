@@ -1,0 +1,38 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Skills-Web</title>
+    <link rel="stylesheet" href="/static/styles.css">
+</head>
+<body>
+    <!-- This page needs a form that can capture data about the user's
+    first name, last name, job title, and salary requirements. -->
+     <h1 label="Application Form">Application Form</h1>
+            <section id="instructions">
+                <p>Please complete the follwing form, all fields are required.</p>
+            </section>
+            <form action="/application-response", method=["POST"]>
+                First Name: <br>
+                <input type="text" class="input-form" name="firstname" placeholder="First Name">
+                <br>
+                Last Name: <br>
+                <input type="text" id="lastname" class="input-form" name="lastname" placeholder="Last Name">
+                <br>
+                Salary Requirement: <br>
+                <input type="number" class="input-form" name="salary" placeholder="USD">
+                <br>
+                Job Title: <br>
+                <select name="title" class="input-form">
+                    <option value="Software Engineer">Software Engineer</option>
+                    <option value="QA Engineer">QA Engineer</option>
+                    <option value="Product Manager">Product Manager</option>
+                </select>
+                <br>
+                <br>
+                <!-- <form action="/application-response", method=["POST"]> -->
+                <input type="submit" class="input-form" name="submit" value="Submit Application">
+             <!--    </form> -->
+            </form>
+</body>
+</html>
